@@ -1,3 +1,12 @@
+## [0.2.7](https://github.com/oclif/plugin-test-core-v1/compare/0.2.6...0.2.7) (2023-10-18)
+
+
+### Bug Fixes
+
+* **deps:** bump @babel/traverse from 7.16.3 to 7.23.2 ([713d055](https://github.com/oclif/plugin-test-core-v1/commit/713d05506f9440d1f3edb1f469b081b6c5977aff))
+
+
+
 ## [0.2.6](https://github.com/oclif/plugin-test-core-v1/compare/0.2.5...0.2.6) (2023-10-15)
 
 
