@@ -1,6 +1,6 @@
 {
   "name": "@oclif/plugin-test-core-v1",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "description": "Test plugin that uses @oclif/core v1",
   "author": "Salesforce",
   "bin": {
