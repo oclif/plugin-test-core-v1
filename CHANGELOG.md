@@ -1,3 +1,12 @@
+## [0.2.10](https://github.com/oclif/plugin-test-core-v1/compare/0.2.9...0.2.10) (2024-02-21)
+
+
+### Bug Fixes
+
+* **deps:** bump ip from 2.0.0 to 2.0.1 ([f8e6ca1](https://github.com/oclif/plugin-test-core-v1/commit/f8e6ca11afdcffe76d3e5de5158444c77649f12e))
+
+
+
 ## [0.2.9](https://github.com/oclif/plugin-test-core-v1/compare/0.2.8...0.2.9) (2023-10-29)
 
 
