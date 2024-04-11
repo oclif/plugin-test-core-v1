@@ -1,3 +1,12 @@
+## [0.2.11](https://github.com/oclif/plugin-test-core-v1/compare/0.2.10...0.2.11) (2024-04-11)
+
+
+### Bug Fixes
+
+* **deps:** bump tar from 6.1.11 to 6.2.1 ([2fa7467](https://github.com/oclif/plugin-test-core-v1/commit/2fa74676957992c17aef2370f52dcae26e3272a8))
+
+
+
 ## [0.2.10](https://github.com/oclif/plugin-test-core-v1/compare/0.2.9...0.2.10) (2024-02-21)
 
 
