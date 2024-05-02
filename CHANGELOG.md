@@ -1,3 +1,12 @@
+## [0.2.12](https://github.com/oclif/plugin-test-core-v1/compare/0.2.11...0.2.12) (2024-05-02)
+
+
+### Bug Fixes
+
+* **deps:** bump ejs from 3.1.9 to 3.1.10 ([#52](https://github.com/oclif/plugin-test-core-v1/issues/52)) ([aae0ce0](https://github.com/oclif/plugin-test-core-v1/commit/aae0ce09dc48a8e1e9ca17a3b4c210fa8fc5d5e6))
+
+
+
 ## [0.2.11](https://github.com/oclif/plugin-test-core-v1/compare/0.2.10...0.2.11) (2024-04-11)
 
 
