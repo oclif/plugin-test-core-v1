@@ -18,7 +18,7 @@ $ npm install -g @oclif/plugin-test-core-v1
 $ corev1 COMMAND
 running command...
 $ corev1 (--version)
-@oclif/plugin-test-core-v1/0.2.12 linux-x64 node-v18.20.2
+@oclif/plugin-test-core-v1/0.2.13 linux-x64 node-v18.20.2
 $ corev1 --help [COMMAND]
 USAGE
   $ corev1 COMMAND
@@ -52,7 +52,7 @@ GLOBAL FLAGS
   --json  Format output as json.
 ```
 
-_See code: [src/commands/core-v1.ts](https://github.com/oclif/plugin-test-core-v1/blob/0.2.12/src/commands/core-v1.ts)_
+_See code: [src/commands/core-v1.ts](https://github.com/oclif/plugin-test-core-v1/blob/0.2.13/src/commands/core-v1.ts)_
 
 ## `corev1 help [COMMANDS]`
 
@@ -95,7 +95,7 @@ EXAMPLES
   $ corev1 plugins
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.9.4/src/commands/plugins/index.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/index.ts)_
 
 ## `corev1 plugins:inspect PLUGIN...`
 
@@ -122,7 +122,7 @@ EXAMPLES
   $ corev1 plugins:inspect myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.9.4/src/commands/plugins/inspect.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/inspect.ts)_
 
 ## `corev1 plugins:install PLUGIN...`
 
@@ -162,7 +162,7 @@ EXAMPLES
   $ corev1 plugins:install someuser/someplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.9.4/src/commands/plugins/install.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/install.ts)_
 
 ## `corev1 plugins:link PLUGIN`
 
@@ -192,7 +192,7 @@ EXAMPLES
   $ corev1 plugins:link myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.9.4/src/commands/plugins/link.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/link.ts)_
 
 ## `corev1 plugins:uninstall PLUGIN...`
 
@@ -217,7 +217,7 @@ ALIASES
   $ corev1 plugins remove
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.9.4/src/commands/plugins/uninstall.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/uninstall.ts)_
 
 ## `corev1 plugins update`
 
@@ -235,5 +235,5 @@ DESCRIPTION
   Update installed plugins.
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.9.4/src/commands/plugins/update.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/update.ts)_
 <!-- commandsstop -->
