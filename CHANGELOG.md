@@ -1,3 +1,12 @@
+## [0.2.14](https://github.com/oclif/plugin-test-core-v1/compare/0.2.13...0.2.14) (2024-06-13)
+
+
+### Bug Fixes
+
+* **deps:** bump braces from 3.0.2 to 3.0.3 ([#58](https://github.com/oclif/plugin-test-core-v1/issues/58)) ([64fb07e](https://github.com/oclif/plugin-test-core-v1/commit/64fb07e50498ffe017814ef3c600b0907b48fd76))
+
+
+
 ## [0.2.13](https://github.com/oclif/plugin-test-core-v1/compare/0.2.12...0.2.13) (2024-05-26)
 
 
