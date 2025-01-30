@@ -11,7 +11,7 @@
   "main": "dist/index.js",
   "repository": "oclif/plugin-test-core-v1",
   "files": [
-    "/bin",
+    "bin",
     "/dist",
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
@@ -22,14 +22,16 @@
     "@oclif/plugin-plugins": "^3.10.1"
   },
   "devDependencies": {
+    "@eslint/compat": "^1.2.5",
+    "@oclif/prettier-config": "^0.2.1",
     "@oclif/test": "^2.5.6",
     "@types/chai": "^4",
     "@types/mocha": "^9.0.0",
     "@types/node": "^16.18.125",
     "chai": "^4",
-    "eslint": "^7.32.0",
-    "eslint-config-oclif": "^4",
-    "eslint-config-oclif-typescript": "^1.0.3",
+    "eslint": "^9.19.0",
+    "eslint-config-oclif": "^6.0.0",
+    "eslint-config-prettier": "^10.0.1",
     "mocha": "^9",
     "oclif": "^3.17.2",
     "shx": "^0.3.4",
@@ -57,7 +59,7 @@
   },
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
-    "lint": "eslint . --ext .ts --config .eslintrc",
+    "lint": "eslint",
     "postpack": "shx rm -f oclif.manifest.json",
     "posttest": "yarn lint",
     "prepack": "yarn build && oclif manifest && oclif readme",
@@ -65,7 +67,7 @@
     "version": "oclif readme && git add README.md"
   },
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=18.0.0"
   },
   "bugs": "https://github.com/oclif/plugin-test-core-v1/issues",
   "keywords": [

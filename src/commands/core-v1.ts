@@ -1,21 +1,11 @@
 import {Command, Flags, Interfaces} from '@oclif/core'
 
 type Result = {
-  args: { [name: string]: any }
+  args: {[name: string]: unknown}
   flags: Interfaces.InferredFlags<typeof CoreV1.flags>
 }
 
 export default class CoreV1 extends Command {
-  static flags = {
-    optionalString: Flags.string(),
-    defaultString: Flags.string({
-      default: 'simple string default',
-    }),
-    defaultFnString: Flags.string({
-      default: async () => Promise.resolve('async fn default'),
-    }),
-  }
-
   static args = [
     {
       name: 'optionalArg',
@@ -26,11 +16,19 @@ export default class CoreV1 extends Command {
     },
     {
       name: 'defaultFnArg',
-      default: async (): Promise<string> => Promise.resolve('async fn default'),
+      default: async (): Promise<string> => 'async fn default',
     },
   ]
-
   static enableJsonFlag = true
+  static flags = {
+    optionalString: Flags.string(),
+    defaultString: Flags.string({
+      default: 'simple string default',
+    }),
+    defaultFnString: Flags.string({
+      default: async () => 'async fn default',
+    }),
+  }
 
   async run(): Promise<Result> {
     const {args, flags} = await this.parse(CoreV1)
