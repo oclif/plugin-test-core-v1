@@ -18,7 +18,7 @@ $ npm install -g @oclif/plugin-test-core-v1
 $ corev1 COMMAND
 running command...
 $ corev1 (--version)
-@oclif/plugin-test-core-v1/0.2.15 linux-x64 node-v18.20.4
+@oclif/plugin-test-core-v1/0.2.16 linux-x64 node-v20.20.0
 $ corev1 --help [COMMAND]
 USAGE
   $ corev1 COMMAND
@@ -40,8 +40,8 @@ USAGE
 
 ```
 USAGE
-  $ corev1 core-v1 [OPTIONALARG] [DEFAULTARG] [DEFAULTFNARG] [--optionalString <value>] [--defaultString
-    <value>] [--defaultFnString <value>] [--json]
+  $ corev1 core-v1 [OPTIONALARG] [DEFAULTARG] [DEFAULTFNARG] [--json] [--optionalString <value>]
+    [--defaultString <value>] [--defaultFnString <value>]
 
 FLAGS
   --defaultFnString=<value>  [default: async fn default]
@@ -52,7 +52,7 @@ GLOBAL FLAGS
   --json  Format output as json.
 ```
 
-_See code: [src/commands/core-v1.ts](https://github.com/oclif/plugin-test-core-v1/blob/0.2.15/src/commands/core-v1.ts)_
+_See code: [src/commands/core-v1.ts](https://github.com/oclif/plugin-test-core-v1/blob/0.2.16/src/commands/core-v1.ts)_
 
 ## `corev1 help [COMMANDS]`
 
