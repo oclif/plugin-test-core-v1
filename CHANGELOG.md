@@ -1,3 +1,12 @@
+## [0.2.17](https://github.com/oclif/plugin-test-core-v1/compare/0.2.16...0.2.17) (2026-03-21)
+
+
+### Bug Fixes
+
+* **deps:** bump flatted from 3.3.2 to 3.4.2 ([#182](https://github.com/oclif/plugin-test-core-v1/issues/182)) ([2b7c1f8](https://github.com/oclif/plugin-test-core-v1/commit/2b7c1f83de705650036cf0c2e7eaa8d055fa4ae4))
+
+
+
 ## [0.2.16](https://github.com/oclif/plugin-test-core-v1/compare/0.2.15...0.2.16) (2026-01-23)
 
 
