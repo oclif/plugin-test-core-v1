@@ -1,3 +1,12 @@
+## [0.2.21](https://github.com/oclif/plugin-test-core-v1/compare/0.2.20...0.2.21) (2026-09-24)
+
+
+### Bug Fixes
+
+* resolving compilation problem (W-24099831) ([516baaa](https://github.com/oclif/plugin-test-core-v1/commit/516baaa668d5269adb9eddd83da33e7cfad0cfaf))
+
+
+
 ## [0.2.20](https://github.com/oclif/plugin-test-core-v1/compare/0.2.19...0.2.20) (2026-09-24)
 
 
