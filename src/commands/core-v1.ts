@@ -1,4 +1,4 @@
-import {Command, Flags, Interfaces} from '@oclif/core'
+import {Args, Command, Flags, Interfaces} from '@oclif/core'
 
 type Result = {
   args: {[name: string]: unknown}
@@ -6,19 +6,10 @@ type Result = {
 }
 
 export default class CoreV1 extends Command {
-  static args = [
-    {
-      name: 'optionalArg',
-    },
-    {
-      name: 'defaultArg',
-      default: 'simple string default',
-    },
-    {
-      name: 'defaultFnArg',
-      default: async (): Promise<string> => 'async fn default',
-    },
-  ]
+  static args = {
+    optionalArg: Args.string(),
+    defaultArg: Args.string({default: 'simple string default'})
+  }
   static enableJsonFlag = true
   static flags = {
     optionalString: Flags.string(),
