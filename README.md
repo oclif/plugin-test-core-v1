@@ -18,7 +18,7 @@ $ npm install -g @oclif/plugin-test-core-v1
 $ corev1 COMMAND
 running command...
 $ corev1 (--version)
-@oclif/plugin-test-core-v1/0.2.19 linux-x64 node-v22.22.3
+@oclif/plugin-test-core-v1/0.2.20 linux-x64 node-v22.23.2
 $ corev1 --help [COMMAND]
 USAGE
   $ corev1 COMMAND
@@ -27,21 +27,22 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`corev1 core-v1 [OPTIONALARG] [DEFAULTARG] [DEFAULTFNARG]`](#corev1-core-v1-optionalarg-defaultarg-defaultfnarg)
-* [`corev1 help [COMMANDS]`](#corev1-help-commands)
+* [`corev1 core-v1 [OPTIONALARG] [DEFAULTARG]`](#corev1-core-v1-optionalarg-defaultarg)
+* [`corev1 help [COMMAND]`](#corev1-help-command)
 * [`corev1 plugins`](#corev1-plugins)
 * [`corev1 plugins:inspect PLUGIN...`](#corev1-pluginsinspect-plugin)
-* [`corev1 plugins:install PLUGIN...`](#corev1-pluginsinstall-plugin)
-* [`corev1 plugins:link PLUGIN`](#corev1-pluginslink-plugin)
-* [`corev1 plugins:uninstall PLUGIN...`](#corev1-pluginsuninstall-plugin)
+* [`corev1 plugins install PLUGIN`](#corev1-plugins-install-plugin)
+* [`corev1 plugins link PATH`](#corev1-plugins-link-path)
+* [`corev1 plugins reset`](#corev1-plugins-reset)
+* [`corev1 plugins uninstall [PLUGIN]`](#corev1-plugins-uninstall-plugin)
 * [`corev1 plugins update`](#corev1-plugins-update)
 
-## `corev1 core-v1 [OPTIONALARG] [DEFAULTARG] [DEFAULTFNARG]`
+## `corev1 core-v1 [OPTIONALARG] [DEFAULTARG]`
 
 ```
 USAGE
-  $ corev1 core-v1 [OPTIONALARG] [DEFAULTARG] [DEFAULTFNARG] [--json] [--optionalString <value>]
-    [--defaultString <value>] [--defaultFnString <value>]
+  $ corev1 core-v1 [OPTIONALARG] [DEFAULTARG] [--json] [--optionalString <value>] [--defaultString <value>]
+    [--defaultFnString <value>]
 
 FLAGS
   --defaultFnString=<value>  [default: async fn default]
@@ -52,18 +53,18 @@ GLOBAL FLAGS
   --json  Format output as json.
 ```
 
-_See code: [src/commands/core-v1.ts](https://github.com/oclif/plugin-test-core-v1/blob/0.2.19/src/commands/core-v1.ts)_
+_See code: [src/commands/core-v1.ts](https://github.com/oclif/plugin-test-core-v1/blob/0.2.20/src/commands/core-v1.ts)_
 
-## `corev1 help [COMMANDS]`
+## `corev1 help [COMMAND]`
 
 Display help for corev1.
 
 ```
 USAGE
-  $ corev1 help [COMMANDS] [-n]
+  $ corev1 help [COMMAND...] [-n]
 
 ARGUMENTS
-  COMMANDS  Command to show help for.
+  [COMMAND...]  Command to show help for.
 
 FLAGS
   -n, --nested-commands  Include all nested commands in the output.
@@ -72,7 +73,7 @@ DESCRIPTION
   Display help for corev1.
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/5.2.20/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/7.0.0/src/commands/help.ts)_
 
 ## `corev1 plugins`
 
@@ -95,7 +96,7 @@ EXAMPLES
   $ corev1 plugins
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/index.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.1/src/commands/plugins/index.ts)_
 
 ## `corev1 plugins:inspect PLUGIN...`
 
@@ -103,10 +104,10 @@ Displays installation properties of a plugin.
 
 ```
 USAGE
-  $ corev1 plugins:inspect PLUGIN...
+  $ corev1 plugins inspect PLUGIN...
 
 ARGUMENTS
-  PLUGIN  [default: .] Plugin to inspect.
+  PLUGIN...  [default: .] Plugin to inspect.
 
 FLAGS
   -h, --help     Show CLI help.
@@ -119,69 +120,79 @@ DESCRIPTION
   Displays installation properties of a plugin.
 
 EXAMPLES
-  $ corev1 plugins:inspect myplugin
+  $ corev1 plugins inspect myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/inspect.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.1/src/commands/plugins/inspect.ts)_
 
-## `corev1 plugins:install PLUGIN...`
+## `corev1 plugins install PLUGIN`
 
-Installs a plugin into the CLI.
+Installs a plugin into corev1.
 
 ```
 USAGE
-  $ corev1 plugins:install PLUGIN...
+  $ corev1 plugins install PLUGIN... [--json] [-f] [-h] [-s | -v]
 
 ARGUMENTS
-  PLUGIN  Plugin to install.
+  PLUGIN...  Plugin to install.
 
 FLAGS
-  -f, --force    Run yarn install with force flag.
+  -f, --force    Force npm to fetch remote resources even if a local copy exists on disk.
   -h, --help     Show CLI help.
-  -v, --verbose
+  -s, --silent   Silences npm output.
+  -v, --verbose  Show verbose npm output.
+
+GLOBAL FLAGS
+  --json  Format output as json.
 
 DESCRIPTION
-  Installs a plugin into the CLI.
-  Can be installed from npm or a git url.
+  Installs a plugin into corev1.
+
+  Uses npm to install plugins.
 
   Installation of a user-installed plugin will override a core plugin.
 
-  e.g. If you have a core plugin that has a 'hello' command, installing a user-installed plugin with a 'hello' command
-  will override the core plugin implementation. This is useful if a user needs to update core plugin functionality in
-  the CLI without the need to patch and update the whole CLI.
-
+  Use the COREV1_NPM_LOG_LEVEL environment variable to set the npm loglevel.
+  Use the COREV1_NPM_REGISTRY environment variable to set the npm registry.
 
 ALIASES
   $ corev1 plugins add
 
 EXAMPLES
-  $ corev1 plugins:install myplugin 
+  Install a plugin from npm registry.
 
-  $ corev1 plugins:install https://github.com/someuser/someplugin
+    $ corev1 plugins install myplugin
 
-  $ corev1 plugins:install someuser/someplugin
+  Install a plugin from a github url.
+
+    $ corev1 plugins install https://github.com/someuser/someplugin
+
+  Install a plugin from a github slug.
+
+    $ corev1 plugins install someuser/someplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/install.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.1/src/commands/plugins/install.ts)_
 
-## `corev1 plugins:link PLUGIN`
+## `corev1 plugins link PATH`
 
 Links a plugin into the CLI for development.
 
 ```
 USAGE
-  $ corev1 plugins:link PLUGIN
+  $ corev1 plugins link PATH [-h] [--install] [-v]
 
 ARGUMENTS
   PATH  [default: .] path to plugin
 
 FLAGS
-  -h, --help      Show CLI help.
+  -h, --help          Show CLI help.
   -v, --verbose
-  --[no-]install  Install dependencies after linking the plugin.
+      --[no-]install  Install dependencies after linking the plugin.
 
 DESCRIPTION
   Links a plugin into the CLI for development.
+
   Installation of a linked plugin will override a user-installed or core plugin.
 
   e.g. If you have a user-installed or core plugin that has a 'hello' command, installing a linked plugin with a 'hello'
@@ -189,21 +200,36 @@ DESCRIPTION
 
 
 EXAMPLES
-  $ corev1 plugins:link myplugin
+  $ corev1 plugins link myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/link.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.1/src/commands/plugins/link.ts)_
 
-## `corev1 plugins:uninstall PLUGIN...`
+## `corev1 plugins reset`
+
+Remove all user-installed and linked plugins.
+
+```
+USAGE
+  $ corev1 plugins reset [--hard] [--reinstall]
+
+FLAGS
+  --hard       Delete node_modules and package manager related files in addition to uninstalling plugins.
+  --reinstall  Reinstall all plugins after uninstalling.
+```
+
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.1/src/commands/plugins/reset.ts)_
+
+## `corev1 plugins uninstall [PLUGIN]`
 
 Removes a plugin from the CLI.
 
 ```
 USAGE
-  $ corev1 plugins:uninstall PLUGIN...
+  $ corev1 plugins uninstall [PLUGIN...] [-h] [-v]
 
 ARGUMENTS
-  PLUGIN  plugin to uninstall
+  [PLUGIN...]  plugin to uninstall
 
 FLAGS
   -h, --help     Show CLI help.
@@ -215,9 +241,12 @@ DESCRIPTION
 ALIASES
   $ corev1 plugins unlink
   $ corev1 plugins remove
+
+EXAMPLES
+  $ corev1 plugins uninstall myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/uninstall.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.1/src/commands/plugins/uninstall.ts)_
 
 ## `corev1 plugins update`
 
@@ -235,5 +264,5 @@ DESCRIPTION
   Update installed plugins.
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/update.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.1/src/commands/plugins/update.ts)_
 <!-- commandsstop -->

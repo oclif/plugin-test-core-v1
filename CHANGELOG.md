@@ -1,3 +1,12 @@
+## [0.2.20](https://github.com/oclif/plugin-test-core-v1/compare/0.2.19...0.2.20) (2026-09-24)
+
+
+### Bug Fixes
+
+* bumped deps (W-24099831) ([ecd9126](https://github.com/oclif/plugin-test-core-v1/commit/ecd912644815a3c08e5ac224ba28625382d94afb))
+
+
+
 ## [0.2.19](https://github.com/oclif/plugin-test-core-v1/compare/0.2.18...0.2.19) (2026-06-10)
 
 
