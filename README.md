@@ -18,7 +18,7 @@ $ npm install -g @oclif/plugin-test-core-v1
 $ corev1 COMMAND
 running command...
 $ corev1 (--version)
-@oclif/plugin-test-core-v1/0.2.21 linux-x64 node-v22.23.2
+@oclif/plugin-test-core-v1/0.2.22 linux-x64 node-v22.23.2
 $ corev1 --help [COMMAND]
 USAGE
   $ corev1 COMMAND
@@ -27,7 +27,7 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`corev1 core-v1 [OPTIONALARG] [DEFAULTARG]`](#corev1-core-v1-optionalarg-defaultarg)
+* [`corev1 core-v1 [OPTIONALARG] [DEFAULTARG] [DEFAULTFNARG]`](#corev1-core-v1-optionalarg-defaultarg-defaultfnarg)
 * [`corev1 help [COMMAND]`](#corev1-help-command)
 * [`corev1 plugins`](#corev1-plugins)
 * [`corev1 plugins:inspect PLUGIN...`](#corev1-pluginsinspect-plugin)
@@ -37,12 +37,12 @@ USAGE
 * [`corev1 plugins uninstall [PLUGIN]`](#corev1-plugins-uninstall-plugin)
 * [`corev1 plugins update`](#corev1-plugins-update)
 
-## `corev1 core-v1 [OPTIONALARG] [DEFAULTARG]`
+## `corev1 core-v1 [OPTIONALARG] [DEFAULTARG] [DEFAULTFNARG]`
 
 ```
 USAGE
-  $ corev1 core-v1 [OPTIONALARG] [DEFAULTARG] [--json] [--optionalString <value>] [--defaultString <value>]
-    [--defaultFnString <value>]
+  $ corev1 core-v1 [OPTIONALARG] [DEFAULTARG] [DEFAULTFNARG] [--json] [--optionalString <value>]
+    [--defaultString <value>] [--defaultFnString <value>]
 
 FLAGS
   --defaultFnString=<value>  [default: async fn default]
@@ -53,7 +53,7 @@ GLOBAL FLAGS
   --json  Format output as json.
 ```
 
-_See code: [src/commands/core-v1.ts](https://github.com/oclif/plugin-test-core-v1/blob/0.2.21/src/commands/core-v1.ts)_
+_See code: [src/commands/core-v1.ts](https://github.com/oclif/plugin-test-core-v1/blob/0.2.22/src/commands/core-v1.ts)_
 
 ## `corev1 help [COMMAND]`
 
