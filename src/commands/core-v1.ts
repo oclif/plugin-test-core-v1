@@ -8,7 +8,12 @@ type Result = {
 export default class CoreV1 extends Command {
   static args = {
     optionalArg: Args.string(),
-    defaultArg: Args.string({default: 'simple string default'})
+    defaultArg: Args.string({
+      default: 'simple string default'
+    }),
+    defaultFnArg: Args.string({
+      default: async (): Promise<string> => 'async fn default'
+    })
   }
   static enableJsonFlag = true
   static flags = {
