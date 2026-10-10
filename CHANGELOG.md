@@ -1,3 +1,12 @@
+## [0.2.26](https://github.com/oclif/plugin-test-core-v1/compare/0.2.25...0.2.26) (2026-10-10)
+
+
+### Bug Fixes
+
+* **deps:** bump @humanfs/node from 0.16.6 to 0.16.8 ([#206](https://github.com/oclif/plugin-test-core-v1/issues/206)) ([4d3d618](https://github.com/oclif/plugin-test-core-v1/commit/4d3d618050892448c0ce446d8d41db58c69ba81c))
+
+
+
 ## [0.2.25](https://github.com/oclif/plugin-test-core-v1/compare/0.2.24...0.2.25) (2026-10-09)
 
 
