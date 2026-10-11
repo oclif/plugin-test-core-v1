@@ -908,10 +908,10 @@
     node-gyp "^12.1.0"
     proc-log "^6.0.0"
 
-"@oclif/core@^5.0.0", "@oclif/core@^5.0.1":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-5.0.1.tgz#55f7fa2c518116c0cd1bccbd0cd3d388fb314995"
-  integrity sha512-vJajq85xNxu6lheUEJ046lh9V61EAAGGDn1H+EOJzFL528iEr2iVY0OyHZjDmRteT/SvhlQbfhRpugKnCsT4yw==
+"@oclif/core@^5.0.0", "@oclif/core@^5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-5.1.2.tgz#671d9905bd3deddcb86cd17d5e00668505b166fc"
+  integrity sha512-vgbWWFKjjsf7oAbJONFPnDkVNeqmy70DTBUjsprW/HRiTrXe8sMlFc0ih8GjpU+dn+m6V2ksaZjBV9HgnsmWVg==
   dependencies:
     ansi-escapes "^4.3.2"
     ansis "^3.17.0"
@@ -1752,13 +1752,6 @@ brace-expansion@^2.0.1:
   integrity sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==
   dependencies:
     balanced-match "^1.0.0"
-
-brace-expansion@^5.0.2:
-  version "5.0.4"
-  resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-5.0.4.tgz#614daaecd0a688f660bbbc909a8748c3d80d4336"
-  integrity sha512-h+DEnpVvxmfVefa4jFbCf5HdH5YMDXRsmKflpf1pILZWRFlTbJpxeU55nJl4Smt5HQaGzg1o6RHFPJaOqnmBDg==
-  dependencies:
-    balanced-match "^4.0.2"
 
 brace-expansion@^5.0.8:
   version "5.0.12"
@@ -2895,11 +2888,6 @@ fastq@^1.6.0:
   integrity sha512-YpkpUnK8od0o1hmeSc7UUs/eB/vIPWJYjKck2QKIzAf71Vm1AAQ3EbuZB3g2JIy+pg+ERD0vqI79KyZiB2e2Nw==
   dependencies:
     reusify "^1.0.4"
-
-fdir@^6.4.4:
-  version "6.4.4"
-  resolved "https://registry.yarnpkg.com/fdir/-/fdir-6.4.4.tgz#1cfcf86f875a883e19a8fab53622cfe992e8d2f9"
-  integrity sha512-1NZP+GK4GfuAv3PqKvxQRDMjdSRZjnkq7KfhlNrCNNlZ0ygQFpebfrnfnq/W7fpUnAv9aGWmY1zKx7FYL3gwhg==
 
 fdir@^6.5.0:
   version "6.5.0"
@@ -4169,19 +4157,12 @@ minimatch@4.2.1:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimatch@^10.0.3, minimatch@^10.1.1, minimatch@^10.2.5:
+minimatch@^10.0.3, minimatch@^10.1.1, minimatch@^10.2.2, minimatch@^10.2.5:
   version "10.2.6"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-10.2.6.tgz#fd956bbe0b77241e9f15ac5dccb1c638060968ef"
   integrity sha512-vpLQEs+VLCr1nU0BXS07maYoFwlDAH0gngQuuttxIwutDFEMHq2blX+8vpgxDdK3J1PwjCJiep77OitTZ4Ll1A==
   dependencies:
     brace-expansion "^5.0.8"
-
-minimatch@^10.2.2:
-  version "10.2.4"
-  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-10.2.4.tgz#465b3accbd0218b8281f5301e27cedc697f96fde"
-  integrity sha512-oRjTw/97aTBN0RHbYCdtF1MQfvusSIBQM0IZEgzl6426+8jSC0nF1a/GmnVLpfB9yyr6g6FTqWqiZVbxrtaCIg==
-  dependencies:
-    brace-expansion "^5.0.2"
 
 minimatch@^3.0.4, minimatch@^3.1.2, minimatch@^3.1.5:
   version "3.1.5"
@@ -5609,29 +5590,13 @@ tiny-relative-date@^2.0.2:
   resolved "https://registry.yarnpkg.com/tiny-relative-date/-/tiny-relative-date-2.0.2.tgz#0c35c2a3ef87b80f311314918505aa86c2d44bc9"
   integrity sha512-rGxAbeL9z3J4pI2GtBEoFaavHdO4RKAU54hEuOef5kfx5aPqiQtbhYktMOTL5OA33db8BjsDcLXuNp+/v19PHw==
 
-tinyglobby@^0.2.12, tinyglobby@^0.2.17:
+tinyglobby@^0.2.12, tinyglobby@^0.2.13, tinyglobby@^0.2.15, tinyglobby@^0.2.17:
   version "0.2.17"
   resolved "https://registry.yarnpkg.com/tinyglobby/-/tinyglobby-0.2.17.tgz#562a9a6c9eb2b3b123d39719f9af5bb44fcd7631"
   integrity sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==
   dependencies:
     fdir "^6.5.0"
     picomatch "^4.0.4"
-
-tinyglobby@^0.2.13:
-  version "0.2.13"
-  resolved "https://registry.yarnpkg.com/tinyglobby/-/tinyglobby-0.2.13.tgz#a0e46515ce6cbcd65331537e57484af5a7b2ff7e"
-  integrity sha512-mEwzpUgrLySlveBwEVDMKk5B57bhLPYovRfPAXD5gA/98Opn0rCDj3GtLwFvCvH5RK9uPCExUROW5NjDwvqkxw==
-  dependencies:
-    fdir "^6.4.4"
-    picomatch "^4.0.2"
-
-tinyglobby@^0.2.15:
-  version "0.2.15"
-  resolved "https://registry.yarnpkg.com/tinyglobby/-/tinyglobby-0.2.15.tgz#e228dd1e638cea993d2fdb4fcd2d4602a79951c2"
-  integrity sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==
-  dependencies:
-    fdir "^6.5.0"
-    picomatch "^4.0.3"
 
 to-regex-range@^5.0.1:
   version "5.0.1"
