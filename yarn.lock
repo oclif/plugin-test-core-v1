@@ -949,10 +949,10 @@
     ansis "^3.17.0"
     fast-levenshtein "^3.0.0"
 
-"@oclif/plugin-plugins@^7.0.3":
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-plugins/-/plugin-plugins-7.0.3.tgz#6863352a27d5e0b467076b06470ad13d382ffc00"
-  integrity sha512-ufjwLdKbw5AC8BjguvRGRBFoSc8RGXV1TVjxMDr8smJuN8QM4yhZIvKCoSVQC24BX71pF75LrvQEWpwQJbwpQA==
+"@oclif/plugin-plugins@^7.0.8":
+  version "7.0.8"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-plugins/-/plugin-plugins-7.0.8.tgz#b84b1817110e0c98476e42f2763dc4c3a11a3d84"
+  integrity sha512-qFliLKkVsC53yIb/FCNFEijetvvJHV4q5Vi/zhX3Lwj8KZOpNK2ST80xjCQpWTN3gKwXna901QxAeolrH1Y94Q==
   dependencies:
     "@oclif/core" "^5.0.0"
     ansis "^3.17.0"
