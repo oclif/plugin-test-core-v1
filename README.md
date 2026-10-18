@@ -18,7 +18,7 @@ $ npm install -g @oclif/plugin-test-core-v1
 $ corev1 COMMAND
 running command...
 $ corev1 (--version)
-@oclif/plugin-test-core-v1/0.2.30 linux-x64 node-v22.23.3
+@oclif/plugin-test-core-v1/0.2.31 linux-x64 node-v22.23.3
 $ corev1 --help [COMMAND]
 USAGE
   $ corev1 COMMAND
@@ -53,7 +53,7 @@ GLOBAL FLAGS
   --json  Format output as json.
 ```
 
-_See code: [src/commands/core-v1.ts](https://github.com/oclif/plugin-test-core-v1/blob/0.2.30/src/commands/core-v1.ts)_
+_See code: [src/commands/core-v1.ts](https://github.com/oclif/plugin-test-core-v1/blob/0.2.31/src/commands/core-v1.ts)_
 
 ## `corev1 help [COMMAND]`
 
@@ -73,7 +73,7 @@ DESCRIPTION
   Display help for corev1.
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/7.0.4/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/7.0.5/src/commands/help.ts)_
 
 ## `corev1 plugins`
 
@@ -96,7 +96,7 @@ EXAMPLES
   $ corev1 plugins
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.3/src/commands/plugins/index.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.8/src/commands/plugins/index.ts)_
 
 ## `corev1 plugins:inspect PLUGIN...`
 
@@ -123,7 +123,7 @@ EXAMPLES
   $ corev1 plugins inspect myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.3/src/commands/plugins/inspect.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.8/src/commands/plugins/inspect.ts)_
 
 ## `corev1 plugins install PLUGIN`
 
@@ -172,7 +172,7 @@ EXAMPLES
     $ corev1 plugins install someuser/someplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.3/src/commands/plugins/install.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.8/src/commands/plugins/install.ts)_
 
 ## `corev1 plugins link PATH`
 
@@ -203,7 +203,7 @@ EXAMPLES
   $ corev1 plugins link myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.3/src/commands/plugins/link.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.8/src/commands/plugins/link.ts)_
 
 ## `corev1 plugins reset`
 
@@ -218,7 +218,7 @@ FLAGS
   --reinstall  Reinstall all plugins after uninstalling.
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.3/src/commands/plugins/reset.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.8/src/commands/plugins/reset.ts)_
 
 ## `corev1 plugins uninstall [PLUGIN]`
 
@@ -246,7 +246,7 @@ EXAMPLES
   $ corev1 plugins uninstall myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.3/src/commands/plugins/uninstall.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.8/src/commands/plugins/uninstall.ts)_
 
 ## `corev1 plugins update`
 
@@ -264,5 +264,5 @@ DESCRIPTION
   Update installed plugins.
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.3/src/commands/plugins/update.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.8/src/commands/plugins/update.ts)_
 <!-- commandsstop -->
