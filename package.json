@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@eslint/compat": "^1.4.1",
-    "@oclif/prettier-config": "^0.2.1",
+    "@oclif/prettier-config": "^0.2.2",
     "@oclif/test": "^5.0.1",
     "@types/chai": "^4",
     "@types/mocha": "^9.0.0",
