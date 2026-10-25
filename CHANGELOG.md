@@ -1,3 +1,12 @@
+## [0.2.33](https://github.com/oclif/plugin-test-core-v1/compare/0.2.32...0.2.33) (2026-10-25)
+
+
+### Bug Fixes
+
+* **deps:** bump ip-address from 10.7.2 to 10.7.5 ([#225](https://github.com/oclif/plugin-test-core-v1/issues/225)) ([c88a5d5](https://github.com/oclif/plugin-test-core-v1/commit/c88a5d53a23ea5e64910597a82e1342488164b1b))
+
+
+
 ## [0.2.32](https://github.com/oclif/plugin-test-core-v1/compare/0.2.31...0.2.32) (2026-10-25)
 
 
